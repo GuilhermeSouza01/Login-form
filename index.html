@@ -7,7 +7,7 @@
     <title>Login Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -25,14 +25,28 @@
                         </div>
                         
                         <p>Entre com suas informações de cadastro.</p>
-                        <form >
-                        
+                        <form id="login-form">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+
+                            <label for="pass">Senha</label>
+                            <input type="password" name="password" id="pass" placeholder="Digite sua senha">
                         </form>
+
+                        <div class="check-information">
+                            <div id="check">
+                                <input type="checkbox" name="remember" class="remember-check">
+                                <label for="remember">Lembre-me</label>
+                            </div>    
+
+                            <a href="#" id="forgot-pass">Esqueci minha senha</a>
+                        </div>
+                        
                 </div>
             </div>
         </section>
         <section class="image-aside">
-            <!-- <img class="trip-image" src="assets/side-image.png" alt="Car-image"> -->
+            
         </section>
     </div>
 
