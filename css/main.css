@@ -92,19 +92,7 @@ table {
     width: 512px;
     height: 420px;
 }
-.form-content {
-    /* display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    flex-direction: column; */
-    margin: 0;
-}
 
-.form-content p {
-    font-weight: 500;
-    font-size: 14px;
-
-}
 .login-text-and-icon {
     display: flex;
     padding: 10px 10px 10px 0px;
@@ -125,9 +113,10 @@ table {
 .form-content p {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 14px;
     font-style: normal;
     color: var(--text-base);
+    margin-bottom: 24px;
 }
 .image-aside {
     
@@ -156,14 +145,16 @@ table {
     line-height: 16px;
     color: var(--text-base);
     outline: none;
+    margin-bottom: 20px;
 }
 
 #login-form label {
    font-family: 'Poppins', sans-serif;
    font-weight: 500;
    color: var(--text-base);
-   font-size: 1rem; 
+   font-size: 16px; 
    line-height: 24px;
+   margin-bottom: 5px;
 }
 
 #login-form input:focus {
@@ -174,6 +165,7 @@ table {
 .check-information {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 #check label {
@@ -183,7 +175,55 @@ table {
     font-size: 0.9rem;
     line-height: 19px;
 }
+/* #check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+#check:hover input ~ {
+   
+} */
+
+
+.remember-check {
+    margin-left: 1px;
+    margin-right: 0;
+}
 
 .remember-check + label {
     cursor: pointer;
+}
+
+#forgot-pass {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary-color);
+    line-height: 21px;
+}
+
+#enter-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #473404;
+    border-radius: 4px;
+    width: 334px;
+    height: 51px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+#enter-button:hover {
+    background-color: #f7b819;
+
 }
