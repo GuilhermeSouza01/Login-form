@@ -168,33 +168,68 @@ table {
     margin-bottom: 20px;
 }
 
-#check label {
+.check label {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: var(--text-base);
     font-size: 0.9rem;
     line-height: 19px;
+    margin-bottom: 15px;
 }
-/* #check input {
+
+.check-container {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.check-container input {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
     height: 0;
     width: 0;
 }
-#check:hover input ~ {
-   
-} */
 
-
-.remember-check {
-    margin-left: 1px;
-    margin-right: 0;
-}
-
-.remember-check + label {
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: var(--form-background);
+    border: 1px solid #868686;
+    border-radius: 4px;
     cursor: pointer;
 }
+
+.check-container:hover input ~ .checkmark {
+    background-color: rgb(48, 48, 48);
+  }
+
+.check-container input:checked ~ .checkmark {
+    background-color: #f7b819;
+}
+
+.check-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 4.5px;
+    top: 1px;
+    width: 3px;
+    height: 7px;
+    border: 2px solid #473404;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.check-container input:checked ~ .checkmark:after {
+    display: block;
+  }
 
 #forgot-pass {
     text-decoration: none;
