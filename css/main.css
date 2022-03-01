@@ -57,7 +57,7 @@ table {
     position: absolute;
     width: 115px;
     height: 28px;
-    top: 40px;
+    top: 20px;
     left: 20px;
     margin: 0;
 }
@@ -90,7 +90,7 @@ table {
     border-radius: 4px;
     /* margin: 194 0 194 0; */
     width: 512px;
-    height: 420px;
+    height: 512px;
 }
 
 .login-text-and-icon {
@@ -118,6 +118,13 @@ table {
     color: var(--text-base);
     margin-bottom: 24px;
 }
+
+.form-content #create-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+}
 .image-aside {
     
     height: 100%;
@@ -139,13 +146,9 @@ table {
     border-radius: 4px;
     background-color: var(--form-background);
     height: 44px;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 16px;
-    color: var(--text-base);
     outline: none;
     margin-bottom: 20px;
+    padding-left: 37px;
 }
 
 #login-form label {
@@ -160,6 +163,28 @@ table {
 #login-form input:focus {
     border: 1px solid var(--primary-color);
     box-shadow: 0px 0px 0px 2px #FFDE88;
+}
+
+.mail-input {
+    background: url(../assets/mail.svg) no-repeat 12px 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 16px;
+    color: rgb(207, 207, 207);
+}
+
+.pass-input {
+    background-image: url(../assets/lock.svg), url(../assets/eye.svg);
+    background-repeat: no-repeat;
+    background-position: left 12px center, right 12px center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 16px;
+    color: rgb(207, 207, 207);
 }
 
 .check-information {
@@ -263,4 +288,43 @@ table {
 #enter-button:hover {
     background-color: #f7b819;
 
+}
+
+#create-account {
+    text-decoration: none;
+}
+#create-account p{
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--primary-color);
+    line-height: 21px;
+    text-decoration: none;
+}
+
+#create-account span {
+    font-weight: bold;
+}
+
+
+@media (max-width: 900px) {
+   .image-aside {
+       display: none;
+   }
+
+}
+
+@media (max-width: 400px) {
+    .form {
+        background:none;
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 40px;
+    }
 }
